@@ -1,8 +1,7 @@
 package edu.ucsd.cs110.temperature;
-public class Celsius extends Temperature
-{
-    public Celsius(float t)
-    {
+
+public class Celsius extends Temperature {
+    public Celsius(float t) {
         super(t);
     }
 
@@ -13,13 +12,12 @@ public class Celsius extends Temperature
 
     @Override
     public Temperature toFahrenheit() {
-        float value = ((this.getValue()*9)/5)+32;
+        float value = ((this.getValue() * 9) / 5) + 32;
         return new Fahrenheit(value);
     }
 
-    public String toString()
-    {
+    public String toString() {
         // TODO: Complete this method
-        return this.getValue()+" C";
+        return this.getValue() + " C";
     }
 }
